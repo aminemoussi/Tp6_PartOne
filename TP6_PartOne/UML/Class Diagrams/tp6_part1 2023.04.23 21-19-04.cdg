@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tp6_part1">
+  <ClassDiagramComponents>
+    <Class name="bike" package="" visibility="public" xPosition="773.0" yPosition="464.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="model" type="String" visibility="private"/>
+        <Field name="wheels" type="ArrayList&lt;wheel&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="model"/>
+          <Argument type="ArrayList&lt;wheel&gt;" name="wheels"/>
+          <Argument type="String" name="plate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="set_name" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="get_name" returnType="void" visibility="public"/>
+        <Method name="set_model" returnType="void" visibility="public">
+          <Argument type="String" name="model"/>
+        </Method>
+        <Method name="get_model" returnType="void" visibility="public"/>
+        <Method name="print_bike_info" returnType="void" visibility="public"/>
+        <Method name="add_wheel_in_truck" returnType="void" visibility="public">
+          <Argument type="wheel" name="wheelunit"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="car" package="" visibility="public" xPosition="166.0" yPosition="464.0">
+      <Fields>
+        <Field name="weight" type="double" visibility="private"/>
+        <Field name="model" type="String" visibility="private"/>
+        <Field name="brand" type="String" visibility="private"/>
+        <Field name="wheels" type="ArrayList&lt;wheel&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="weight"/>
+          <Argument type="String" name="model"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="ArrayList&lt;wheel&gt;" name="wheels"/>
+          <Argument type="String" name="plate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="set_weight" returnType="void" visibility="public">
+          <Argument type="double" name="weight"/>
+        </Method>
+        <Method name="get_weight" returnType="void" visibility="public"/>
+        <Method name="set_model" returnType="void" visibility="public">
+          <Argument type="String" name="model"/>
+        </Method>
+        <Method name="get_model" returnType="void" visibility="public"/>
+        <Method name="set_brand" returnType="void" visibility="public">
+          <Argument type="String" name="brand"/>
+        </Method>
+        <Method name="get_brand" returnType="void" visibility="public"/>
+        <Method name="print_car_info" returnType="void" visibility="public"/>
+        <Method name="add_wheel_in_car" returnType="void" visibility="public">
+          <Argument type="wheel" name="wheelunit"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="truck" package="" visibility="public" xPosition="1276.0" yPosition="464.0">
+      <Fields>
+        <Field name="loadcapacity" type="double" visibility="private"/>
+        <Field name="numberReserveWheels" type="int" visibility="private"/>
+        <Field name="weight" type="double" visibility="private"/>
+        <Field name="wheels" type="ArrayList&lt;wheel&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="loadcapacity"/>
+          <Argument type="int" name="numberReserveWheels"/>
+          <Argument type="double" name="weight"/>
+          <Argument type="ArrayList&lt;wheel&gt;" name="wheels"/>
+          <Argument type="String" name="plate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="set_loadcapacity" returnType="void" visibility="public">
+          <Argument type="double" name="loadcapacity"/>
+        </Method>
+        <Method name="get_loadcapacity" returnType="void" visibility="public"/>
+        <Method name="set_numberreservewheels" returnType="void" visibility="public">
+          <Argument type="int" name="numberreservewheels"/>
+        </Method>
+        <Method name="get_numberReserveWheels" returnType="void" visibility="public"/>
+        <Method name="set_weight" returnType="void" visibility="public">
+          <Argument type="double" name="weight"/>
+        </Method>
+        <Method name="get_weight" returnType="void" visibility="public"/>
+        <Method name="print_truck_info" returnType="void" visibility="public"/>
+        <Method name="add_wheel_in_truck" returnType="void" visibility="public">
+          <Argument type="wheel" name="wheelunit"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="vehicle" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="plate" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="plate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="set_plate_number" returnType="void" visibility="public">
+          <Argument type="String" name="plate"/>
+        </Method>
+        <Method name="get_plate_number" returnType="void" visibility="public"/>
+        <Method name="print_vehicle_info" returnType="void" visibility="public"/>
+        <Method name="goForward" returnType="void" visibility="public"/>
+        <Method name="goBackward" returnType="void" visibility="public"/>
+        <Method name="start" returnType="void" visibility="public"/>
+        <Method name="stop" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="wheel" package="" visibility="public" xPosition="1218.0" yPosition="1230.0">
+      <Fields>
+        <Field name="wheelSize" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="wheelSize"/>
+          <Argument type="String" name="plate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="print_wheel_info" returnType="void" visibility="public"/>
+        <Method name="print_wheel_state" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="car" target="vehicle"/>
+    <IsRelation name="is" source="truck" target="vehicle"/>
+    <IsRelation name="is" source="bike" target="vehicle"/>
+    <UseRelation name="" source="truck" target="wheel" sourceCardinality="1..1" targetCardinality="1..*"/>
+    <UseRelation name="" source="bike" target="wheel" sourceCardinality="1..1" targetCardinality="1..*"/>
+    <UseRelation name="" source="car" target="wheel" sourceCardinality="1..1" targetCardinality="1..*"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
